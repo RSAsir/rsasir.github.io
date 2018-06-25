@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/funciones.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <!-- Dados dos numeros, crear una calculadora capaz de realizar su suma,
+    multiplicacion, division y potencia. -->
+
+    <div class="container2">
+      <form name="formu" id="formu">
+        <h3>Introduce un numero a:</h3>
+        <input type="text" name= "a" value="">
+        <br>
+        <h3>Introduce un numero b:</h3>
+        <input type="text" name="b" value="">
+        <br>
+        <br>
+        <input type="button" name="test" onclick="suma()" value="Suma">
+        <input type="button" name="test" onclick="multiplicacion()"
+        value="Multiplicacion">
+        <input type="button" name="test" onclick="division()" value="Division">
+        <input type="button" name="test" onclick="potencia()" value="Potencia">
+        <br
+        <br>
+        <h3>Resultado:</h3>
+        <input type="text" name="respuesta" size="50">
+      </form>
+    </div>
+  </body>
+</html>
