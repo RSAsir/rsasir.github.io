@@ -1,0 +1,571 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: white;
+}
+
+nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+.breadcrump {
+    display: flex;
+    margin: 10px;
+}
+
+.breadcrump a {
+    color: black;
+}
+
+.breadcrump .activo {
+    color: #A99301;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    
+}
+.top {
+    display: flex;
+    height: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #1b1b1b;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23000000' fill-opacity='0.4' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.top a img {
+    height: 70px;
+}
+
+nav {
+    /* margin: 10px; */
+    width: 100%;
+}
+
+header nav ul {
+    /* Deja de ser lista */
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    padding: 0 15px;
+    font-size: 16px;
+    font-family: 'Noto Serif', serif;  
+}
+
+header nav ul li .activo {
+    color: #A99301;
+    border-bottom: 1px solid #A99301;
+}
+
+/* BODY */
+
+.fila_car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exterior {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.exterior img {
+    width: 40%;
+    height: 40%;
+}
+
+.caracteristicas {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    width: 50%;
+}
+
+.caracteristicas  .centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centrado p {
+    margin-top: 10px;
+}
+
+.fila_det_img {
+    margin: 40px;
+}
+
+.img_det {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img_det img {
+    height: 40%;
+    width: 40%;
+    /* padding: 40px; */
+}
+
+.fila_contacto {
+    /* margin: 60px 120px; */
+    display: flex;
+    /* box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5); */
+    padding: 50px;
+    align-self: center;
+}
+
+.info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.fila_map_des {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.col_iz {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+
+.fila {
+    margin: 40px;
+}
+
+.legales h1 {
+    font-size: 28px;
+    padding: 16px;
+}
+
+.legales h2 {
+    font-size: 22px;
+    padding: 15px;
+}
+
+.legales p, li {
+    font-size: 16px;
+}
+
+.legales ul {
+    padding-left: 60px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.form_cont {
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.form_cont form {
+    margin: 40px 0;
+    width: 120%;
+    padding: 20px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_cont_2 {
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.form_cont_2 form {
+    margin: 40px 0;
+    padding: 20px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.envio .botones {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(43, 43, 43);
+    margin-left: 5px;
+}
+
+.botones:hover {
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+.tarjetas_general {
+    margin: 20px;
+    /* Receta para filas con cards */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.fil {
+        width: 100%;
+        margin: 20px;
+        /* Receta para filas con cards */
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+}
+
+.tarjeta_general {
+    width: 300px;
+    height: 400px;
+    box-shadow: 4px 4px 8px grey;
+    margin: 40px;
+}
+
+.imagen_general {
+    /* Para que la imagen quede sin margenes, hacemos que coincida con el ancho de la tarjeta. */
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.imagen_general img {
+    width: 100%;
+    height: 200px;
+}
+
+.btn_general {
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Efecto visual */
+    border-bottom: 4px solid rgb(151, 14, 41);
+    /* Con esto el boton queda centrado independientemente de todo lo demas */
+    /* El valor por defecto es strech */
+    align-self: center;
+}
+
+.btn_general:hover {
+    background-color: rgb(151, 14, 41);
+}
+
+.datos_general {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.direccion_general {
+    width: 200px;
+}
+
+.datos_general .precio{
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+
+.direccion_general p:first-child {
+    color: crimson;
+    font-weight: bold;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+ .paginacion .activo {
+    color: #A99301;
+}
+
+.paginacion a {
+    color: black;
+}
+
+/* FOOTER */
+
+footer {
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #1b1b1b;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23000000' fill-opacity='0.4' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+    line-height: 2em;
+}
+
+footer .links ul {
+    list-style: none;
+
+}
+
+footer .links ul a {
+    color: white;
+    
+}
+
+footer .links ul li .activo {
+    color: #A99301;
+    border-bottom: 1px solid #A99301;
+}
+
+footer .links ul a:hover {
+    border-bottom: 1px solid white;
+}
+
+
+
+.rrss {
+    flex-basis: 300px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rrss a {
+    font-size: 34px;
+    color: white;
+}
+
+.rrss a:hover {
+    border-bottom: 1px solid white;
+}
+
+footer .dir {
+    flex-basis: 300px;
+}
+
+
+.links {
+    flex-basis: 300px;
+    text-align: center;
+}
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1000px) {
+    .fila_contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .fila_contacto .info {
+        margin-bottom: 50px; 
+        width: 100%;
+    }
+
+    .info p {
+        font-size: 16px; 
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .texto {
+        padding: 0 100px;
+    }
+
+    footer .dir {
+        margin-left:20px;
+    }
+
+    footer .rrss {
+        margin-right:20px;
+    }
+}
+
+@media (max-width: 800px) {
+    nav {
+        display: none;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burger {
+        font-size: 34px;
+        display:initial;
+        color: white;
+        margin: 0 40px;
+
+    }
+    
+    .logo {
+        margin: 0 40px;
+    }
+
+    .exterior img {
+        flex-basis: 300px;
+    }
+
+    .fila_map_des {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fila_map_des form {
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .fila_map_des form .personal {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 20px;
+        width: 100%
+    }
+
+    .form_cont_2 form .personal {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 20px;
+        width: 100%
+    }
+
+    .tel {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 610px) {
+
+    footer {
+        line-height: 1.5em;
+    }
+
+    footer .dir {
+        font-size: 16px;
+        flex-basis: 100px;
+    }
+
+    .rrss {
+        flex-basis: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    footer .links {
+        flex-basis: 100px;
+    }
+
+    .links a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .centrado {
+        padding: 0 5px;
+    }
+
+    .centrado p {
+        font-size: 10px; 
+    }
+
+    .legales ul {
+        padding-left: 30px;
+    }
+
+    footer {
+        line-height: 1.5em;
+    }
+
+    footer .dir {
+        font-size: 10px;
+        flex-basis: 100px;
+    }
+
+    .rrss {
+        flex-basis: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    footer .links {
+        flex-basis: 50px;
+    }
+
+    .links a {
+        font-size: 10px;
+    }
+}
